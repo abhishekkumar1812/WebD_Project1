@@ -1,0 +1,151 @@
+/* CSS Reset */
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/* CSS Variable */
+:root{
+    --navbar-height: 50pxl;
+}
+
+/* Nevigatio Bar */
+#navbar{
+    display: flex;
+    align-items: center; 
+    position: relative;
+    top: 0px;
+    left: 0px;
+}
+
+/* Navigation Bar: logo and Iamge */
+#logo img{
+    height: 75px;
+    margin:10px 10px;
+    border-radius: 40px;
+}
+
+/* Navigation Bar: List Styling */
+#navbar ul{
+    display: flex;
+}
+
+#navbar::before {
+   content: "";
+   background-color: black;
+   position: absolute;
+   height: 100%;
+   width: 100%;
+   z-index: -1;
+   opacity: 0.7;
+   top: 0px;
+    left: 0px;
+}
+
+#navbar ul li{
+    list-style: none;
+    font-size: 1.5rem;
+}
+
+#navbar ul li a{
+    color: white;
+    display: block;
+    padding: 1px 15px;
+    border-radius: 20px;
+    text-decoration: none;
+}
+
+#navbar ul li a:hover{
+    color: black;
+    background-color: white;
+}
+
+/* Home section */
+#home{
+    display: flex;
+    flex-direction: column;
+    padding: 3px 200px;
+    height: 570px;
+    justify-content: center;
+    align-items: center;
+}
+
+#home::before {
+    content: "";
+    position: absolute;
+    background :url("pp.jpeg") no-repeat center center/cover;
+    height: 67%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.9;
+    filter: brightness(40%); 
+ }
+ 
+ #home h1{
+    color: white;
+    text-align: center;
+    font-size: 3.2rem;
+ }
+
+ #home p{
+    color: white;
+    text-align: center;
+    font-size: 1.7rem;
+ }
+
+
+ /* Services section */
+
+#services{
+    margin: 35px;
+    display:flex;
+}
+
+#services .box{
+    border: 5px solid brown;
+    padding:35px;
+    margin: 3px 6px;
+    border-radius: 30px;
+    background: rgb(190, 136, 136);
+}
+
+#services .box img{
+    border: 160px;
+    margin: auto;
+    display: block;
+}
+
+/* client service */
+#clients{
+    display: flex;
+    padding: 3px;
+    border-radius: 20px;
+    align-items: center;
+    justify-content: center;
+}
+ /* Utility Class */
+.h-primary{
+    font-size: 3.8rem;
+    padding: 12px;
+}
+
+.h-secondary{
+    font-size: 2.8rem;
+    padding: 12px;
+}
+
+
+/* Button */
+.btn{
+    padding: 6px 20px;
+    border: 2px solid white;
+    background-color: blue;
+    color: white;
+    margin: 20px;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+.center{
+    text-align: center;
+}
