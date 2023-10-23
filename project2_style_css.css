@@ -149,16 +149,3 @@
 .center{
     text-align: center;
 }
-
-
-<nav id="navbar">
-        <div id="logo">
-            <img src="logo.jpg" alt="MyOnlineMeal">
-        </div>
-        <ul>
-            <li class="item"><a herf="#">Home</a></li>
-            <li class="item"><a herf="#">Services</a></li>
-            <li class="item"><a herf="#">About Us</a></li>
-            <li class="item"> <a herf="#">Contact Us</a></li>
-        </ul>
-    </nav>
